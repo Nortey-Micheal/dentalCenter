@@ -1,5 +1,11 @@
+import Navbar from "../components/navbar"
+
 export default function Blogs() {
     return (
-        <section></section>
+        <>   
+            <Navbar />
+            <section>            
+            </section>
+        </>
     )
 }

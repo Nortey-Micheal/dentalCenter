@@ -1,11 +1,13 @@
-import { StrictMode } from 'react'
+import { StrictMode, Suspense, lazy } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './pages/App.tsx'
 import { createBrowserRouter } from 'react-router'
-import About from './pages/about.tsx'
-import Blogs from './pages/blogs.tsx'
-import NoPageFound from './pages/404page.tsx'
+const About = lazy(() => import('./pages/about.tsx')); 
+const Blogs = lazy(() => import('./pages/blogs.tsx'));
+const Services = lazy(() => import('./pages/services.tsx'));
+import Loading from './components/loading.tsx'
+const NoPageFound = lazy(() => import('./pages/404page.tsx'))
 import { RouterProvider } from 'react-router'
 
 const router = createBrowserRouter([
@@ -23,11 +25,18 @@ const router = createBrowserRouter([
     path: '/blogs',
     element: <Blogs />,
     errorElement: <NoPageFound />
+  },
+  {
+    path: '/service',
+    element: <Services />,
+    errorElement: <NoPageFound />
   }
 ])
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <Suspense fallback={<Loading />}>
+      <RouterProvider router={router}/>
+    </Suspense>
   </StrictMode>,
 )
