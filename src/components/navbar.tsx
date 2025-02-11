@@ -19,7 +19,7 @@ export default function Navbar() {
                         <li className="hover:bg-cyan-50 rounded-xl hover:text-cyan-600"><a>Contact us</a></li>
                     </ul>
                     </div>
-                    <Link className="btn btn-ghost text-cyan-600 text-xl rounded-2xl" to={'/'}>Dental Center</Link>
+                    <Link className="btn btn-ghost text-cyan-600 text-xl rounded-2xl lg:text-2xl" to={'/'}>Dental Center</Link>
                 </div>
                 <div className="navbar-center text-slate-800 font-bold hidden lg:flex">
                     <ul className="menu menu-horizontal text-lg px-1">
