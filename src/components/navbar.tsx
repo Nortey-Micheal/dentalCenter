@@ -12,20 +12,20 @@ export default function Navbar() {
                     <ul
                         tabIndex={0}
                         className="menu dropdown-content rounded-2xl font-bold text-cyan-50 bg-cyan-600  z-1 mt-3 w-52 p-2 shadow">
-                        <li className="hover:bg-cyan-50 rounded-xl hover:text-cyan-600"><NavLink to={'/'}>Home</NavLink></li>
-                        <li className="hover:bg-cyan-50 rounded-lg hover:text-cyan-600"><NavLink to={'/service'}>Services</NavLink></li>
-                        <li className="hover:bg-cyan-50 rounded-lg hover:text-cyan-600"><NavLink to={'/about'}>About us</NavLink></li>
-                        <li className="hover:bg-cyan-50 rounded-xl hover:text-cyan-600"><NavLink to={'/contact'}>Contact us</NavLink></li>
+                        <li className="hover:bg-cyan-50 rounded-xl hover:text-cyan-600"><NavLink className={({isActive}) => isActive ? 'underline decoration-2 decoration-cyan-100' : ''} to={'/'}>Home</NavLink></li>
+                        <li className="hover:bg-cyan-50 rounded-lg hover:text-cyan-600"><NavLink className={({isActive}) => isActive ? 'underline decoration-2 decoration-cyan-100' : ''} to={'/service'}>Services</NavLink></li>
+                        <li className="hover:bg-cyan-50 rounded-lg hover:text-cyan-600"><NavLink className={({isActive}) => isActive ? 'underline decoration-2 decoration-cyan-100' : ''} to={'/about'}>About us</NavLink></li>
+                        <li className="hover:bg-cyan-50 rounded-xl hover:text-cyan-600"><NavLink className={({isActive}) => isActive ? 'underline decoration-2 decoration-cyan-100' : ''} to={'/contact'}>Contact us</NavLink></li>
                     </ul>
                     </div>
                     <NavLink className="btn btn-ghost text-cyan-600 text-xl rounded-2xl lg:text-2xl" to={'/'}>Dental Center</NavLink>
                 </div>
                 <div className="navbar-center text-slate-800 font-bold hidden lg:flex">
                     <ul className="menu menu-horizontal text-lg px-1">
-                        <li className="hover:underline decoration-2 underline-offset-5 decoration-cyan-600"><NavLink to={'/'}>Home</NavLink></li>
-                        <li className="hover:underline decoration-2 underline-offset-5 decoration-cyan-600"><NavLink to={'/service'}>Services</NavLink></li>
-                        <li className="hover:underline decoration-2 underline-offset-5 decoration-cyan-600"><NavLink to={'/about'}>About us</NavLink></li>
-                        <li className="hover:underline decoration-2 underline-offset-5 decoration-cyan-600"><NavLink to={'/contact'}>Contact us</NavLink></li>
+                        <li className="hover:underline decoration-2 underline-offset-5 decoration-cyan-600"><NavLink className={({isActive}) => isActive ? 'underline decoration-2 decoration-cyan-700' : ''} to={'/'}>Home</NavLink></li>
+                        <li className="hover:underline decoration-2 underline-offset-5 decoration-cyan-600"><NavLink className={({isActive}) => isActive ? 'underline decoration-2 decoration-cyan-700' : ''} to={'/service'}>Services</NavLink></li>
+                        <li className="hover:underline decoration-2 underline-offset-5 decoration-cyan-600"><NavLink className={({isActive}) => isActive ? 'underline decoration-2 decoration-cyan-700' : ''} to={'/about'}>About us</NavLink></li>
+                        <li className="hover:underline decoration-2 underline-offset-5 decoration-cyan-600"><NavLink className={({isActive}) => isActive ? 'underline decoration-2 decoration-cyan-700' : ''} to={'/contact'}>Contact us</NavLink></li>
                     </ul>
                 </div>
                 <div className="navbar-end">
