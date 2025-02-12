@@ -61,7 +61,7 @@ export default function Services() {
                 <h1 className="text-3xl font-bold my-10 text-center md:text-left lg:text-5xl text-slate-800">We are committed to <br /> providing quality healthcare.</h1>
                 <div className="flex flex-wrap gap-10 mx-auto justify-around mb-15">
                     {services.map((service,index) => (
-                        <div key={index} className="h-[300px] flex flex-col justify-center border w-full text-cyan-800 hover:bg-cyan-800 hover:text-cyan-50 lg:w-[40%] border-cyan-800 text-center mb-5 p-3 rounded-2xl gap-5">
+                        <div key={index} className={`h-[300px] flex flex-col justify-center border w-full ${(index % 2) === 0 ? 'text-cyan-800 bg-cyan-100 hover:bg-cyan-800  hover:text-cyan-100' : 'text-cyan-100 bg-cyan-800 hover:text-cyan-800 hover:bg-cyan-100'}  hover:text-cyan-50 lg:w-[40%] border-cyan-800 text-center mb-5 p-3 rounded-2xl gap-5`}>
                             <i className={`text-8xl fas ${service.icon}`}></i>
                             <h2 className="text-3xl font-bold text-cyan-90">{service.type}</h2>
                             <p>{service.description}</p>
