@@ -57,36 +57,36 @@ export default function Services() {
     return (
         <>
            <Navbar />
-           <section className="w-[90vw] mx-auto ">
-                <h1 className="text-3xl font-bold my-10 text-center">We are committed to <br /> providing quality healthcare.</h1>
-                <div className="flex flex-wrap gap-10 mx-auto justify-around">
+           <section className="w-[90vw] mx-auto max-w-[1200px]">
+                <h1 className="text-3xl font-bold my-10 text-center md:text-left lg:text-5xl text-slate-800">We are committed to <br /> providing quality healthcare.</h1>
+                <div className="flex flex-wrap gap-10 mx-auto justify-around mb-15">
                     {services.map((service,index) => (
-                        <div key={index} className="h-[300px] flex flex-col justify-center border w-full hover:bg-cyan-800 hover:text-cyan-50 lg:w-[40%] border-cyan-800 text-center mb-5 p-3 rounded-2xl gap-5">
-                            <i className={`text-8xl text-cyan-600 fas ${service.icon}`}></i>
+                        <div key={index} className="h-[300px] flex flex-col justify-center border w-full text-cyan-800 hover:bg-cyan-800 hover:text-cyan-50 lg:w-[40%] border-cyan-800 text-center mb-5 p-3 rounded-2xl gap-5">
+                            <i className={`text-8xl fas ${service.icon}`}></i>
                             <h2 className="text-3xl font-bold text-cyan-90">{service.type}</h2>
                             <p>{service.description}</p>
                         </div>
                     ))}
                 </div>
-                <div className="flex flex-col md:flex-row">
-                    <p className="md:max-w-2/3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem enim molestias ad voluptatem deserunt ullam tempore in ab alias. Possimus, alias. Blanditiis vel quidem nostrum, adipisci totam, nihil nesciunt veniam tempora voluptates, laudantium excepturi. Nihil veniam consectetur dolore unde perspiciatis molestiae dolor est sunt id. Illum repellendus dicta deleniti quasi?</p>
-                    <div className="stats stats-vertical lg:stats-horizontal shadow w-full text-center">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-x-10">
+                    <p className="md:max-w-[500px] text-slate-700 font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem enim molestias ad voluptatem deserunt ullam tempore in ab alias. Possimus, alias.</p>
+                    <div className="stats stats-vertical mt-10 mb-20 text-cyan-800 lg:stats-horizontal rounded-2xl shadow w-full text-center">
                         <div className="stat">
-                            <div className="stat-title">Downloads</div>
-                            <div className="stat-value">31K</div>
-                            <div className="stat-desc">Jan 1st - Feb 1st</div>
+                            <div className="stat-title"></div>
+                            <div className="stat-value">24/7</div>
+                            <div className="stat-desc text-[1.1rem]">Online Support</div>
                         </div>
 
                         <div className="stat">
-                            <div className="stat-title">New Users</div>
-                            <div className="stat-value">4,200</div>
-                            <div className="stat-desc">↗︎ 400 (22%)</div>
+                            <div className="stat-title"></div>
+                            <div className="stat-value">15+</div>
+                            <div className="stat-desc text-[1.1rem]">Dentist</div>
                         </div>
 
                         <div className="stat">
-                            <div className="stat-title">New Registers</div>
-                            <div className="stat-value">1,200</div>
-                            <div className="stat-desc">↘︎ 90 (14%)</div>
+                            <div className="stat-title"></div>
+                            <div className="stat-value">10K+</div>
+                            <div className="stat-desc text-[1.1rem]" >Active Patients</div>
                         </div>
                     </div>
                 </div>
