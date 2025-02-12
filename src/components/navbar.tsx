@@ -15,7 +15,6 @@ export default function Navbar() {
                         <li className="hover:bg-cyan-50 rounded-xl hover:text-cyan-600"><NavLink to={'/'}>Home</NavLink></li>
                         <li className="hover:bg-cyan-50 rounded-lg hover:text-cyan-600"><NavLink to={'/service'}>Services</NavLink></li>
                         <li className="hover:bg-cyan-50 rounded-lg hover:text-cyan-600"><NavLink to={'/about'}>About us</NavLink></li>
-                        <li className="hover:bg-cyan-50 rounded-lg hover:text-cyan-600"><NavLink to={'/blogs'}>Blog</NavLink></li>
                         <li className="hover:bg-cyan-50 rounded-xl hover:text-cyan-600"><NavLink to={'/contact'}>Contact us</NavLink></li>
                     </ul>
                     </div>
@@ -26,7 +25,6 @@ export default function Navbar() {
                         <li className="hover:underline decoration-2 underline-offset-5 decoration-cyan-600"><NavLink to={'/'}>Home</NavLink></li>
                         <li className="hover:underline decoration-2 underline-offset-5 decoration-cyan-600"><NavLink to={'/service'}>Services</NavLink></li>
                         <li className="hover:underline decoration-2 underline-offset-5 decoration-cyan-600"><NavLink to={'/about'}>About us</NavLink></li>
-                        <li className="hover:underline decoration-2 underline-offset-5 decoration-cyan-600"><NavLink to={'/blogs'}>Blog</NavLink></li>
                         <li className="hover:underline decoration-2 underline-offset-5 decoration-cyan-600"><NavLink to={'/contact'}>Contact us</NavLink></li>
                     </ul>
                 </div>

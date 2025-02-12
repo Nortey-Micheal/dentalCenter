@@ -4,7 +4,6 @@ import './index.css'
 import App from './pages/App.tsx'
 import { createBrowserRouter } from 'react-router'
 const About = lazy(() => import('./pages/about.tsx')); 
-const Blogs = lazy(() => import('./pages/blogs.tsx'));
 const Services = lazy(() => import('./pages/services.tsx'));
 import Loading from './components/loading.tsx'
 const NoPageFound = lazy(() => import('./pages/404page.tsx'))
@@ -19,11 +18,6 @@ const router = createBrowserRouter([
   {
     path: '/about',
     element: <About />,
-    errorElement: <NoPageFound />
-  },
-  {
-    path: '/blogs',
-    element: <Blogs />,
     errorElement: <NoPageFound />
   },
   {

@@ -139,20 +139,20 @@ export default function About() {
                     <div>
                         <div className="flex justify-between items-center mb-15">
                             <h3 className="text-xl font-bold ">All Reviews <span className="text-slate-600">(456)</span></h3>
-                            <div>
-                            <div className="dropdown dropdown-start">
-                                <div tabIndex={0} role="button" className="btn m-1 rounded-3xl border-cyan-800 font-bold text-lg">Latest </div>
-                                <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                                    <li><a>Item 1</a></li>
-                                    <li><a>Item 2</a></li>
-                                </ul>
-                            </div>
-                            <button className="hidden md:block px-2 py-1 rounded-2xl bg-black text-white font-bold">Write a Review</button>
+                            <div className="flex items-center md:gap-5">
+                                <div className="dropdown dropdown-start">
+                                    <div tabIndex={0} role="button" className="btn m-1 rounded-3xl border-cyan-800 font-bold text-lg">Latest </div>
+                                    <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                                        <li><a>Item 1</a></li>
+                                        <li><a>Item 2</a></li>
+                                    </ul>
+                                </div>
+                                <button className="hidden md:block px-2 py-1 rounded-2xl bg-black text-white font-bold">Write a Review</button>
                             </div>
                         </div>
-                        <div className="flex flex-col lg:flex-row">
+                        <div className="flex flex-col flex-wrap lg:flex-row gap-5">
                             {reviews.map((review, index) => (
-                                <div key={index} className="w-full border p-3 mb-10 gap-">
+                                <div key={index} className="w-full borde lg:w-[30%] bg-cyan-100 rounded-2xl p-3 mb-10 gap-">
                                     <div className="flex justify-between items-center w-full">
                                         <div className="rating rating-lg lg:rating-xl rating-half  ">
                                             <input type="radio" name={`rating-${index}`} className="mask mask-star-2 mask-half-1 bg-orange-300" aria-label="0.5 star" checked={review.ratingF === 0.5} />
