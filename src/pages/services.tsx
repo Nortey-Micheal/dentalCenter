@@ -1,58 +1,60 @@
 import Navbar from "../components/navbar";
 
+export const services = [
+    {
+        type: "Teeth Whitening",
+        description: "Brighten your smile with our professional teeth whitening services.",
+        icon: "fa-tooth"
+    },
+    {
+        type: "Dental Implants",
+        description: "Replace missing teeth with durable and natural-looking dental implants.",
+        icon: "fa-teeth-open"
+    },
+    {
+        type: "Orthodontics",
+        description: "Straighten your teeth with our advanced orthodontic treatments.",
+        icon: "fa-teeth"
+    },
+    {
+        type: "Root Canal Therapy",
+        description: "Save your infected tooth with our effective root canal treatments.",
+        icon: "fa-tooth"
+    },
+    {
+        type: "Dental Crowns",
+        description: "Restore damaged teeth with our custom-made dental crowns.",
+        icon: "fa-crown"
+    },
+    {
+        type: "Dental Bridges",
+        description: "Fill gaps in your smile with our high-quality dental bridges.",
+        icon: "fa-bridge"
+    },
+    {
+        type: "Dentures",
+        description: "Get comfortable and natural-looking dentures to replace missing teeth.",
+        icon: "fa-teeth"
+    },
+    {
+        type: "Pediatric Dentistry",
+        description: "Comprehensive dental care for children in a friendly environment.",
+        icon: "fa-child"
+    },
+    {
+        type: "Periodontal Therapy",
+        description: "Treat gum disease and maintain healthy gums with our periodontal services.",
+        icon: "fa-tooth"
+    },
+    {
+        type: "Cosmetic Dentistry",
+        description: "Enhance your smile with our range of cosmetic dental treatments.",
+        icon: "fa-smile"
+    }
+];
+
 export default function Services() {
-    const services = [
-        {
-            type: "Teeth Whitening",
-            description: "Brighten your smile with our professional teeth whitening services.",
-            icon: "fa-tooth"
-        },
-        {
-            type: "Dental Implants",
-            description: "Replace missing teeth with durable and natural-looking dental implants.",
-            icon: "fa-teeth-open"
-        },
-        {
-            type: "Orthodontics",
-            description: "Straighten your teeth with our advanced orthodontic treatments.",
-            icon: "fa-teeth"
-        },
-        {
-            type: "Root Canal Therapy",
-            description: "Save your infected tooth with our effective root canal treatments.",
-            icon: "fa-tooth"
-        },
-        {
-            type: "Dental Crowns",
-            description: "Restore damaged teeth with our custom-made dental crowns.",
-            icon: "fa-crown"
-        },
-        {
-            type: "Dental Bridges",
-            description: "Fill gaps in your smile with our high-quality dental bridges.",
-            icon: "fa-bridge"
-        },
-        {
-            type: "Dentures",
-            description: "Get comfortable and natural-looking dentures to replace missing teeth.",
-            icon: "fa-teeth"
-        },
-        {
-            type: "Pediatric Dentistry",
-            description: "Comprehensive dental care for children in a friendly environment.",
-            icon: "fa-child"
-        },
-        {
-            type: "Periodontal Therapy",
-            description: "Treat gum disease and maintain healthy gums with our periodontal services.",
-            icon: "fa-tooth"
-        },
-        {
-            type: "Cosmetic Dentistry",
-            description: "Enhance your smile with our range of cosmetic dental treatments.",
-            icon: "fa-smile"
-        }
-    ];
+    
 
     return (
         <>

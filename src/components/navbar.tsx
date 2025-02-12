@@ -2,7 +2,7 @@ import { NavLink } from "react-router";
 
 export default function Navbar() {
     return (
-        <nav className="navbar p-3 bg-cyan-50 shadow-sm sticky top-0">
+        <nav className="navbar z-10 p-3 bg-cyan-50 shadow-sm sticky top-0">
             <div className="container flex justify-between">
                 <div className="navbar-start">
                     <div className="dropdown">
