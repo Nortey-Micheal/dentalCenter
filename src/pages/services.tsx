@@ -68,9 +68,9 @@ export default function Services() {
                         </div>
                     ))}
                 </div>
-                <div className="flex flex-col lg:flex-row items-center justify-between gap-x-10">
+                <div className="flex flex-col lg:flex-row items-center justify-between gap-x-10 lg:mb-20">
                     <p className="md:max-w-[500px] text-slate-700 font-semibold">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem enim molestias ad voluptatem deserunt ullam tempore in ab alias. Possimus, alias.</p>
-                    <div className="stats stats-vertical mt-10 mb-20 text-cyan-800 lg:stats-horizontal rounded-2xl shadow w-full text-center">
+                    <div className="stats stats-vertical mt-10 lg:mt-0 mb-20 lg:mb-0 text-cyan-800 lg:stats-horizontal rounded-2xl shadow w-full text-center">
                         <div className="stat">
                             <div className="stat-title"></div>
                             <div className="stat-value">24/7</div>
